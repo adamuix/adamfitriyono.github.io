@@ -39,7 +39,7 @@ section h1 {
 #hero {
     color: #fff;
     min-height: 100vh;
-    padding-top: 75px;
+    padding-top: 6rem;
 }
 
 #hero h1 {
@@ -255,6 +255,14 @@ hr {
 }
 
 /* End Galery */
+
+/* Contact */
+
+.form-label {
+    color: #fff;
+}
+
+/* End Contact */
 
 /* Footer */
 
