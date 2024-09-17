@@ -1,44 +1,41 @@
-@media screen and ( max-width : 1200px ) {
-    #hero p {
-        font-size: 0.9rem;
-    }
+@media screen and (max-width: 1200px) {
+  #hero p {
+    font-size: 0.9rem;
+  }
 
-    #hero h1 {
-        font-size: 2.3rem;
-    }
+  #hero h1 {
+    font-size: 2.3rem;
+  }
 }
 
-@media screen and ( max-width : 768px ){
-    #hero img {
-        width: 60%;
-    }
-    .social-icon {
-        left: 50%;
-        transform: translate(-50);
-    }
+@media screen and (max-width: 768px) {
+  #hero img {
+    width: 60%;
+  }
+  .social-icon {
+    left: 50%;
+    transform: translate(-50);
+  }
 
-    #hero .row {
-        padding-bottom: 75px;
-    }
+  #hero .row {
+    padding-bottom: 75px;
+  }
 
-    .btn-custom1 {
-        width: 80%;
-    }
+  .btn-custom1 {
+    width: 80%;
+  }
 
-    #about p {
-        text-align: justify !important;
-    }
+  #about p {
+    text-align: justify !important;
+  }
 
-    #skill .card h3 {
-        font-size: 1.3rem;
-    }
+  #skill .card h3 {
+    font-size: 1.3rem;
+  }
 }
 
-@media screen and ( max-width : 575px ) {
-    
+@media screen and (max-width: 575px) {
 }
 
-@media screen and ( max-width : 350px ) {
-    
+@media screen and (max-width: 350px) {
 }
-
