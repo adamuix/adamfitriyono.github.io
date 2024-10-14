@@ -1,58 +1,57 @@
 :root {
-    --mainColor : #252734;
-    --secondaryColor : #333646;
-    --acsentColor : #5369e6;
+  --mainColor: #252734;
+  --secondaryColor: #333646;
+  --acsentColor: #5369e6;
 }
 
 body {
-    background-color: var(--mainColor);
-    min-height: 900px;
-    font-family: 'poppins'. sans-serif;
+  background-color: var(--mainColor);
+  min-height: 900px;
+  font-family: 'poppins' . sans-serif;
 }
 
 section h1 {
-    color:#fff;
-    font-size: 2.5rem;
+  color: #fff;
+  font-size: 2.5rem;
 }
-
 
 /* Navbar */
 
 .nav-link.active {
-    color: var(--acsentColor) !important;
-    font-weight: 700;
+  color: var(--acsentColor) !important;
+  font-weight: 700;
 }
 
 .nav-dark {
-    background-color: var(--secondaryColor) !important;
-    z-index: 10;
-    transition: 0.4s;
+  background-color: var(--secondaryColor) !important;
+  z-index: 10;
+  transition: 0.4s;
 }
 
 /* End Navbar */
 
 /* Hero */
 .color-acsent {
-    color: var(--acsentColor);
+  color: var(--acsentColor);
 }
 
 #hero {
-    color: #fff;
-    min-height: 100vh;
-    padding-top: 6rem;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 6rem;
 }
 
 #hero h1 {
-    font-size: 3rem; 
+  font-size: 3rem;
 }
 
 #hero h2 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 #hero p {
-    font-size: 1.1rem;
-    font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 /* CTA */
@@ -76,70 +75,79 @@ section h1 {
 
 /* Gaya dasar tombol */
 .btn-custom1 {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border-radius: 25px;
-    background-color: #4a67f5;
-    color: white;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: hidden; /* Untuk animasi ripple */
-    position: relative;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 25px;
+  background-color: #4a67f5;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden; /* Untuk animasi ripple */
+  position: relative;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-custom1 a {
+  text-decoration: none;
 }
 
 /* Efek hover */
 .btn-custom1:hover {
-    background-color: #3b55c2;
-    transform: scale(1.05);
-    box-shadow: 0 0 5px rgba(35, 104, 207, 0.8);
+  background-color: #3b55c2;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(35, 104, 207, 0.8);
 }
 
 /* Efek klik */
 .btn-custom1:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /* Ripple effect */
 .btn-custom1::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    transform: scale(0);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.6s ease, opacity 0.6s ease;
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 /* Untuk animasi ripple saat diklik */
 .btn-custom1.ripple-active::after {
-    transform: scale(4);
-    opacity: 0;
+  transform: scale(4);
+  opacity: 0;
 }
-
 
 .cv {
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
 }
 
-.social-icon svg {
-    margin-right: 0.5em;
-    margin-bottom: 10px;
-    margin: 5px;
+.social-icon {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin: 5px;
+  text-decoration: none;
 }
 
-.social-icon-footer svg {
-    margin-right: 0.7em;
-    margin-bottom: 10px;
+.social-icon a {
+  margin-right: 30px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.py-5 a {
+  text-decoration: none;
 }
 
 /* End Hero */
@@ -147,21 +155,21 @@ section h1 {
 /* About */
 
 hr {
-    width: 35%;
-    height: 5px;
-    color: var(--acsentColor);
-    margin: 0 auto;
-    opacity: 100%;
+  width: 35%;
+  height: 5px;
+  color: var(--acsentColor);
+  margin: 0 auto;
+  opacity: 100%;
 }
 
 #about {
-    min-height: 300px;
-    width: 100%;
-    background-color: var(--secondaryColor);
-    color: #fff;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-bottom: 80px;
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 /* End About */
@@ -169,46 +177,45 @@ hr {
 /* Skill */
 
 #skill {
-    min-height: 600px;
-    width: 100%;
-    color: #fff;
+  min-height: 600px;
+  width: 100%;
+  color: #fff;
 }
 
 #skill img {
-    width: 12%;
-    margin: 10px;
+  width: 12%;
+  margin: 10px;
 }
 
 /* Selector untuk ikon skill */
 .skill-icon {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efek ketika dihover */
 .skill-icon:hover {
-    transform: scale(1.2); /* Memperbesar ikon */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Memberikan bayangan */
-    border-radius: 20px;
-    padding: 5px;
-    transform: translateY(-10px);
+  transform: scale(1.2); /* Memperbesar ikon */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Memberikan bayangan */
+  border-radius: 20px;
+  padding: 5px;
+  transform: translateY(-10px);
 }
 
-
 #skill .card {
-    background-color: #414558;
-    height: 400px;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
+  background-color: #414558;
+  height: 400px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
 #skill .card:hover {
-    background-color: var(--acsentColor);
-    box-shadow: 0px 4px 15px rgba(51, 98, 136, 0.877);
-    transform: translateY(-10px);
+  background-color: var(--acsentColor);
+  box-shadow: 0px 4px 15px rgba(51, 98, 136, 0.877);
+  transform: translateY(-10px);
 }
 
 .skill-konten {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 /* End Skill */
@@ -216,33 +223,33 @@ hr {
 /* Sertifikat */
 
 #sertifikat {
-    margin-top: -170px;
-    padding: 270px;
-    padding-bottom: 80px;
-    background-color: var(--secondaryColor);
-
+  margin-top: -170px;
+  padding: 270px;
+  padding-bottom: 80px;
+  background-color: var(--secondaryColor);
 }
 
-#sertifikat p, a {
-    color: #fff !important;
+#sertifikat p,
+a {
+  color: #fff !important;
 }
 
 #sertifikat img {
-    width: 30%;
-    margin: 10px;
-    padding: 5px;
+  width: 30%;
+  margin: 10px;
+  padding: 5px;
 }
 
 /* Style untuk gambar utama */
 .sertifikat-picture {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.4s ease;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.4s ease;
 }
 
 /* Style untuk gambar pada hover */
 .sertifikat-picture:hover {
-    transform: scale(1.05); /* Memperbesar gambar sedikit saat dihover */
+  transform: scale(1.05); /* Memperbesar gambar sedikit saat dihover */
 }
 
 /* End Sertifikat */
@@ -250,8 +257,7 @@ hr {
 /* Galery */
 
 #portofolio .container {
-    padding: 80px 10px;
-    
+  padding: 80px 10px;
 }
 
 /* End Galery */
@@ -259,7 +265,7 @@ hr {
 /* Contact */
 
 .form-label {
-    color: #fff;
+  color: #fff;
 }
 
 /* End Contact */
@@ -267,20 +273,19 @@ hr {
 /* Footer */
 
 .py-5 img {
-    width: 40px;
-    margin-bottom: 10px;
+  width: 40px;
+  margin-bottom: 10px;
 }
 
 /* End Footer */
 /* Animasi Fade In */
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
